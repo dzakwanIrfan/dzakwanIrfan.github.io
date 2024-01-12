@@ -19,11 +19,18 @@
         </div>
         <nav>
             <a href="#home">HOME</a>
-            <a href="">CONTACT</a>
+            <a href="#contact">CONTACT</a>
             <a href="#project">PROJECTS</a>
             <a href="">EXTRAS</a>
             <a href="">ARTICLES</a>
         </nav>
+        <div id="myLinks">
+            <a href="#home">HOME</a>
+            <a href="#contact">CONTACT</a>
+            <a href="#project">PROJECTS</a>
+            <a href="">EXTRAS</a>
+            <a href="">ARTICLES</a>
+        </div>
         <div class="hamburger">
             <i class="iconoir-menu"></i>
         </div>
@@ -216,3 +223,41 @@
     </footer>
 </body>
 </html>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+    const myLinks = document.getElementById('myLinks');
+    const hamburger = document.querySelector('.hamburger');
+
+    // Function to toggle menu
+    function toggleMenu() {
+        myLinks.classList.toggle('active');
+    }
+
+    // Click event for hamburger
+    hamburger.addEventListener('click', function (event) {
+        toggleMenu();
+        event.stopPropagation(); // Prevent click from immediately propagating to document
+    });
+
+    // Click event for the document
+    document.addEventListener('click', function (event) {
+        let targetElement = event.target; // clicked element
+
+        do {
+            if (targetElement == myLinks || targetElement == hamburger) {
+                // Click inside menu or hamburger, don't do anything
+                return;
+            }
+            // Go up the DOM
+            targetElement = targetElement.parentNode;
+        } while (targetElement);
+
+        // Click outside menu, close it if open
+        if (myLinks.classList.contains('active')) {
+            toggleMenu();
+        }
+    });
+});
+
+</script>

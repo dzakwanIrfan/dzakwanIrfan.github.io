@@ -46,6 +46,38 @@ header .hamburger{
     transition: all 0.3s;
 }
 
+#myLinks {
+    position: fixed;
+    right: -100%; /* Start off-screen */
+    top: 0;
+    width: 20%;
+    height: 100%;
+    background-color: var(--hitamBG); /* Example background color */
+    overflow-x: hidden;
+    transition: 0.5s; /* Smooth sliding effect */
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 7rem;
+}
+
+#myLinks a{
+    text-decoration: none;
+    color: var(--putih);
+    font-size: 20px;
+    font-weight: 400;
+}
+
+#myLinks.active {
+    right: 0; /* Slide in */
+}
+
+#myLinks a:hover{
+    color: rgba(243, 243, 243, 0.75);
+}
+
 header .hamburger:hover{
     color: var(--biru);
 }

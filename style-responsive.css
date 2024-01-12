@@ -55,9 +55,7 @@
     }
 
     #home .home-right{
-        position: relative;
         margin: auto;
-        transform: scale(0.8);
     }
 
     #home .home-left .home-contact .email span{
@@ -184,3 +182,76 @@
         font-size: 14px;
     }
 }
+
+@media screen and (max-width: 580px){
+    #home, #project, #about, #contact{
+        padding: 0 2rem;
+    }
+
+    footer .footer-container{
+        padding: 0 2rem;
+        color: var(--putih);
+        margin: auto;
+        padding-top: 36px;
+        padding-bottom: 36px;
+    }
+
+    .bg-head{
+        height: 50px;
+        width: 100%;
+        background: linear-gradient( rgba(0, 0, 205, 1), rgba(34, 34, 34, 0));
+        position: relative;
+    }
+    
+    .bg-head .head{
+        position: absolute;
+        font-size: 32px;
+        top: -24px;
+        margin-left: 36px;
+        color: var(--putih);
+    }
+
+    #about .about-p{
+        font-size: 12px;
+    }
+
+    #about .about-container .about-card .about-head{
+        font-size: 18px;
+        top: -1.75rem;
+    }
+
+    #home{
+        padding-top: 10rem;
+    }
+
+    #home .home-right{
+        position: relative;
+        margin: auto;
+        transform: scale(0.8);
+    }
+
+    #about .about-container .about-card .about-logo{
+        font-size: 24px;
+        position: absolute;
+        padding: 6px 12px;
+        background-color: var(--biruGelap);
+        top: -24px;
+        left: -21px;
+        border-radius: 12px;
+    }
+
+    header .logo img{
+        width: 30px;
+    }
+    
+    header .logo .logo-name{
+        font-size: 12px;
+    }
+
+    header .hamburger{
+        font-size: 1rem;
+    }
+}
+
+
+
