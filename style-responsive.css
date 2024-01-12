@@ -1,0 +1,87 @@
+@media screen and (max-width: 1366px) {
+    #home, #project, #about, #contact, .footer-container{
+        padding: 0 8rem;
+    }
+    
+    #home{
+        padding-top: 180px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #home, #project, #about, #contact, .footer-container{
+        padding: 0 4rem;
+    }
+    
+    #home{
+        padding-top: 180px;
+    }
+
+    header nav{
+        display: none;
+    }
+
+    header .hamburger{
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    #home{
+        padding: 0 4rem;
+        padding-top: 180px;
+        margin: auto;
+        display: flex;
+        line-height: 4rem;
+        color: var(--putih);
+        box-sizing: border-box;
+        flex-direction: column-reverse;
+    }
+
+    #home .home-right{
+        position: relative;
+        margin: auto;
+    }
+
+    #home .home-left .home-contact .email span{
+        display: none;
+    }
+
+    #home .home-left .home-contact .email i{
+        margin: 0;
+    }
+
+    #home .home-left .home-contact .email{
+        padding: 6px 12px;
+    }
+
+    #about .about-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr); 
+        gap: 48px;
+        margin-top: 72px;
+    }
+
+    #contact .contact-container{
+        flex-direction: column;
+    }
+
+    #contact .contact-container .socmed{
+        border: none;
+        border-top: 1px solid var(--putih);
+        padding-left: 0px;
+        padding-top: 36px;
+    }
+    
+    #contact .contact-container .extra{
+        border: none;
+        border-top: 1px solid var(--putih);
+        padding-left: 0px;
+        padding-top: 36px;
+    }
+
+    .email, .socmed{
+        padding-bottom: 36px;
+    }
+}

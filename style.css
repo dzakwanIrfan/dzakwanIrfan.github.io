@@ -31,11 +31,23 @@ header{
     display: flex;
     position: fixed;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 1rem 3rem;
     right: 0;
     top: 0;
     z-index: 99999;
+}
+
+header .hamburger{
+    display: none;
+    color: var(--putih);
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+header .hamburger:hover{
+    color: var(--biru);
 }
 
 header .logo{
@@ -94,15 +106,13 @@ nav a:hover::after {
 }
 
 #home{
+    padding: 0 16rem;
     padding-top: 180px;
-    width: 1000px;
     margin: auto;
     display: flex;
     line-height: 4rem;
     color: var(--putih);
-}
-
-#home .home-left{
+    box-sizing: border-box;
 }
 
 #home .home-left .head1{
@@ -128,6 +138,8 @@ nav a:hover::after {
     display: flex;
     align-items: center;
     align-content: space-around;
+    box-sizing: border-box;
+    gap: 3rem;
 }
 
 #home .home-left .home-contact .email{
@@ -139,7 +151,7 @@ nav a:hover::after {
     line-height: normal;
     border-radius: 12px;
     transition: box-shadow 0.3s, background-color 0.3s;
-    margin-right: 60px;
+    /* margin-right: 60px; */
 }
 
 #home .home-left .home-contact .email:hover {
@@ -150,11 +162,11 @@ nav a:hover::after {
 
 #home .home-left .home-contact .email i{
     font-size: 32px;
-    margin-right: 12px;
+    margin-right: 0.5rem;
 }
 
  .contact-i{
-    margin-right: 60px;
+    /* margin-right: 60px; */
     font-size: 40px;
     cursor: pointer;
     color: var(--putih);
@@ -226,7 +238,7 @@ nav a:hover::after {
 
 .bg-head{
     height: 80px;
-    width: 1000px;
+    width: 100%;
     background: linear-gradient( rgba(0, 0, 205, 1), rgba(34, 34, 34, 0));
     position: relative;
 }
@@ -240,7 +252,7 @@ nav a:hover::after {
 }
 
 #project{
-    width: 1000px;
+    padding: 0 16rem;
     margin: auto;
     margin-top: 80px;
 }
@@ -256,7 +268,7 @@ nav a:hover::after {
 }
 
 #project .project-container .project img{
-    width: 1000px;
+    width: 100%;
     padding-top: 12px;
 }
 
@@ -311,7 +323,7 @@ nav a:hover::after {
 }
 
 #about{
-    width: 1000px;
+    padding: 0 16rem;
     margin: auto;
     margin-top: 80px;
 }
@@ -355,7 +367,7 @@ nav a:hover::after {
 }
 
 #contact{
-    width: 1000px;
+    padding: 0 16rem;
     margin: auto;
     margin-top: 80px;
     color: var(--putih);
@@ -438,7 +450,7 @@ footer{
 }
 
 footer .footer-container{
-    width: 1000px;
+    padding: 0 16rem;
     color: var(--putih);
     margin: auto;
     padding-top: 36px;
