@@ -50,12 +50,11 @@ header .hamburger{
     position: fixed;
     right: -100%; /* Start off-screen */
     top: 0;
-    width: 20%;
+    width: 10rem;
     height: 100%;
     background-color: var(--hitamBG); /* Example background color */
     overflow-x: hidden;
-    transition: 0.5s; /* Smooth sliding effect */
-    padding-top: 60px;
+    transition: 0.5s;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -68,6 +67,7 @@ header .hamburger{
     color: var(--putih);
     font-size: 20px;
     font-weight: 400;
+    padding: 0 3rem;
 }
 
 #myLinks.active {
