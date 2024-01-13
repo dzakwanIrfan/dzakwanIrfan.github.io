@@ -1,6 +1,5 @@
 :root{
-    --biruGelap: #00008B;
-    --biru: #0000CD;
+    --biruGelap: #000370;
     --hitamBG: #3f3f3f;
     --hitam: #222222;
     --putih: #f3f3f3;
@@ -79,7 +78,7 @@ header .hamburger{
 }
 
 header .hamburger:hover{
-    color: var(--biru);
+    color: var(--biruGelap);
 }
 
 header .logo{
@@ -129,7 +128,7 @@ nav a::after {
   bottom: 0;
   width: 0;
   height: 2px;
-  background-image: linear-gradient(to right, rgba(243, 243, 243, 1), rgba(0, 0, 205, 1));
+  background-image: linear-gradient(to right, rgba(243, 243, 243, 1), rgb(0, 3, 112));
   transition: width 0.3s ease-out; /* Animasi lebar garis bawah */
 }
 
@@ -150,7 +149,7 @@ nav a:hover::after {
 #home .home-left .head1{
     font-weight: 700;
     font-size: 32px;
-    background: linear-gradient(to right, #f3f3f3, #0000CD, #0000CD);
+    background: linear-gradient(to right, #f3f3f3, #000370, #000370);
 			-webkit-text-fill-color: transparent;
 			-webkit-background-clip: text;
 }
@@ -239,7 +238,7 @@ nav a:hover::after {
 }
 
 #home .home-right .ornament .garis{
-    background: linear-gradient( rgba(0, 0, 205, 1), rgba(243, 243, 243, 1), rgba(243, 243, 243, 1));
+    background: linear-gradient( rgb(0, 3, 112), rgba(243, 243, 243, 1), rgba(243, 243, 243, 1));
     border-radius: 100px;
 }
 
@@ -271,7 +270,7 @@ nav a:hover::after {
 .bg-head{
     height: 80px;
     width: 100%;
-    background: linear-gradient( rgba(0, 0, 205, 1), rgba(34, 34, 34, 0));
+    background: linear-gradient( rgb(0, 3, 112), rgba(34, 34, 34, 0));
     position: relative;
 }
 
@@ -346,7 +345,7 @@ nav a:hover::after {
 
 #project .project-container .project .project-link .right:hover{
     padding: 12px 24px;
-    box-shadow: inset 0 0 0 2px rgba(0, 0, 139, 1);
+    box-shadow: inset 0 0 0 2px #000370;
     color: var(--putih);
 }
 
@@ -383,7 +382,7 @@ nav a:hover::after {
     font-size: 24px;
     font-weight: 700;
     top: -36px;
-    background: linear-gradient(to right, #f3f3f3, #0000CD);
+    background: linear-gradient(to right, #f3f3f3, #000370);
 	-webkit-text-fill-color: transparent;
 	-webkit-background-clip: text;
 }
