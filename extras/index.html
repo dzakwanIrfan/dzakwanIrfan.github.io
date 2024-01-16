@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Lato:wght@900&family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../../img/logo.png" alt="logo">
+            <div class="logo-name">Dzakwan Irfan Ramdhani</div>
+        </div>
+        <nav>
+            <a href="../index.html">HOME</a>
+            <a href="../index.html#contact">CONTACT</a>
+            <a href="../index.html#project">PROJECTS</a>
+            <a href="">EXTRAS</a>
+            <a href="">ARTICLES</a>
+        </nav>
+        <div id="myLinks">
+            <a href="#home">HOME</a>
+            <a href="#contact">CONTACT</a>
+            <a href="#project">PROJECTS</a>
+            <a href="">EXTRAS</a>
+            <a href="">ARTICLES</a>
+        </div>
+        <div class="hamburger">
+            <i class="iconoir-menu"></i>
+        </div>
+    </header>
+    
+    <section id="extras">
+        <div class="bg-head">
+            <div class="head">the <b><i>extras</i></b></div>
+        </div>
+        <div class="extras">
+            <a href="tic-tac-toe/index.html" class="extra">
+                    <div class="extra-1"><i class="iconoir-grid-xmark"></i></div>
+                    <div class="extra-2">Tic-Tac-Toe</div>
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-head">
+                Reach out to me
+            </div>
+            <div class="footer-p">
+                For business inquiry please send email to <a href="dzakone07@gmail.com">dzakone07@gmail.com</a>
+            </div>
+            <div class="footer-logo">
+                <a href="https://www.instagram.com/dzakonee/" class="contact-i" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <i class="iconoir-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/dzakwan.irfan/" class="contact-i" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                    <i class="iconoir-facebook-tag"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/dzakwan-irfan-2015861a1/" class="contact-i" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <i class="iconoir-linkedin"></i>
+                </a>                  
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+    const myLinks = document.getElementById('myLinks');
+    const hamburger = document.querySelector('.hamburger');
+
+    function toggleMenu() {
+        myLinks.classList.toggle('active');
+    }
+
+    hamburger.addEventListener('click', function (event) {
+        toggleMenu();
+        event.stopPropagation(); 
+    });
+
+    document.addEventListener('click', function (event) {
+        let targetElement = event.target; 
+
+        do {
+            if (targetElement == myLinks || targetElement == hamburger) {
+                return;
+            }
+            targetElement = targetElement.parentNode;
+        } while (targetElement);
+
+        if (myLinks.classList.contains('active')) {
+            toggleMenu();
+        }
+    });
+});
+
+</script>
