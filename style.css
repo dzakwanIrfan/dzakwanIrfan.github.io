@@ -1,5 +1,6 @@
 :root{
     --biruGelap: #000370;
+    --biru: #0000cd;
     --hitamBG: #3f3f3f;
     --hitam: #222222;
     --putih: #f3f3f3;
@@ -128,7 +129,7 @@ nav a::after {
   bottom: 0;
   width: 0;
   height: 2px;
-  background-image: linear-gradient(to right, rgba(243, 243, 243, 1), rgb(0, 3, 112));
+  background-image: linear-gradient(to right, rgba(243, 243, 243, 1), rgb(0, 0, 205));
   transition: width 0.3s ease-out; /* Animasi lebar garis bawah */
 }
 
@@ -149,7 +150,7 @@ nav a:hover::after {
 #home .home-left .head1{
     font-weight: 700;
     font-size: 32px;
-    background: linear-gradient(to right, #f3f3f3, #000370, #000370);
+    background: linear-gradient(to right, #f3f3f3, #0000cd, #0000cd);
 			-webkit-text-fill-color: transparent;
 			-webkit-background-clip: text;
 }
@@ -238,7 +239,7 @@ nav a:hover::after {
 }
 
 #home .home-right .ornament .garis{
-    background: linear-gradient( rgb(0, 3, 112), rgba(243, 243, 243, 1), rgba(243, 243, 243, 1));
+    background: linear-gradient( #0000cd, rgba(243, 243, 243, 1), rgba(243, 243, 243, 1));
     border-radius: 100px;
 }
 
@@ -270,7 +271,7 @@ nav a:hover::after {
 .bg-head{
     height: 80px;
     width: 100%;
-    background: linear-gradient( rgb(0, 3, 112), rgba(34, 34, 34, 0));
+    background: linear-gradient( rgb(0, 0, 205), rgba(34, 34, 34, 0));
     position: relative;
 }
 
